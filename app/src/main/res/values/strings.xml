@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">phone_test</string>
+    <string name="DesignerInfo">开发者信息</string>
+    <string name="designer_info">开发者信息</string>
+    <string name="ContactUs">联系我们</string>
+
+</resources>
