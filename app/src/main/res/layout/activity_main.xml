@@ -38,7 +38,7 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/buttonGoBack"
                 android:layout_width="52dp"
                 android:layout_height="35dp"
                 android:layout_marginStart="10dp"
@@ -89,7 +89,7 @@
                 app:srcCompat="@drawable/roundpoint" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/buttonDesignerInfo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -97,7 +97,8 @@
                 android:paddingLeft="10dp"
                 android:text="@string/DesignerInfo"
                 android:textAlignment="viewStart"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:onClick="getDesignerInfo"/>
         </LinearLayout>
 
         <LinearLayout
@@ -133,7 +134,8 @@
                 android:paddingStart="10dp"
                 android:text="用户反馈"
                 android:textAlignment="viewStart"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:onClick="gotoFeedback"/>
 
 
         </LinearLayout>
