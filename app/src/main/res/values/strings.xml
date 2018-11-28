@@ -1,7 +1,10 @@
 <resources>
     <string name="app_name">phone_test</string>
     <string name="DesignerInfo">开发者信息</string>
-    <string name="designer_info">开发者信息</string>
     <string name="ContactUs">联系我们</string>
+    <string name="setLabel">标签设置</string>
+    <string name="feedbackTitle">问题反馈</string>
+    <string name="feedbackRecordTitle">反馈记录</string>
+    <string name="setNoticeTitle">消息设置</string>
 
 </resources>
