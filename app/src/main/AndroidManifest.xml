@@ -3,7 +3,7 @@
     package="com.example.phone_test">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
         android:allowBackup="true"
@@ -23,7 +23,8 @@
         <activity android:name=".Feedback" />
         <activity android:name=".FeedbackRecorder" />
         <activity android:name=".SetLabelForUser" />
-        <activity android:name=".set_Notice"></activity>
+        <activity android:name=".set_Notice" />
+        <activity android:name=".SetLabelForEvent" />
     </application>
 
 </manifest>

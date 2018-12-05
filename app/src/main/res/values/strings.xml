@@ -6,5 +6,6 @@
     <string name="feedbackTitle">问题反馈</string>
     <string name="feedbackRecordTitle">反馈记录</string>
     <string name="setNoticeTitle">消息设置</string>
+    <string name="setLabelSuccess">标签设置成功！</string>
 
 </resources>

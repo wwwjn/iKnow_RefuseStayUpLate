@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-
+//“联系我们”页面，上一页面为“设置”页面
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -19,14 +19,14 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    //进入“开发者信息”页面
+    //点击“开发者信息”按钮，进入OurInfo页面
     public void getDesignerInfo(View view)
     {
         Intent intent = new Intent(this, OurInfo.class);
         startActivity(intent);
     }
 
-    //进入“反馈信息”页面
+    //点击“反馈信息”页面，进入Feedback页面
     public void gotoFeedback(View view)
     {
         Intent intent = new Intent(this, Feedback.class);

@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SetLabelForEvent">
+
+    <LinearLayout
+        android:id="@+id/SetUserLabel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/shape"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/back"
+                android:onClick="goBack"
+                android:textAlignment="viewStart"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/setLabel"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/line7"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="5dp"
+            android:background="@android:color/darker_gray"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:text="主题标签"
+                        android:textAlignment="center"
+                        android:textColor="?android:attr/statusBarColor"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <FrameLayout
+                        android:id="@+id/yellowLine1"
+                        android:layout_width="78dp"
+                        android:layout_height="5dp"
+                        android:layout_below="@id/textView7"
+                        android:layout_centerHorizontal="true"
+                        android:background="@android:color/holo_orange_light">
+
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/yellowLine1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:text="(必选)"
+                        android:textAlignment="center"
+                        android:textColor="?android:attr/statusBarColor"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/Button_Main_Sci"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:onClick="setEventLabel"
+                        app:srcCompat="@drawable/button_sci" />
+
+                    <ImageButton
+                        android:id="@+id/Button_Main_Computer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:onClick="setEventLabel"
+                        app:srcCompat="@drawable/button_computer" />
+
+                    <ImageButton
+                        android:id="@+id/Button_Main_PE"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:onClick="setEventLabel"
+                        app:srcCompat="@drawable/button_pe" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/Button_Main_Practice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:onClick="setEventLabel"
+                        app:srcCompat="@drawable/button_practice" />
+
+                    <ImageButton
+                        android:id="@+id/Button_Main_English"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:onClick="setEventLabel"
+                        app:srcCompat="@drawable/button_english" />
+
+                    <ImageButton
+                        android:id="@+id/Button_Main_Economic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:onClick="setEventLabel"
+                        app:srcCompat="@drawable/button_economic" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/Button_Main_Chuangye"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:onClick="setEventLabel"
+                        app:srcCompat="@drawable/button_chuangye" />
+
+                    <ImageButton
+                        android:id="@+id/Button_Main_Literature"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:onClick="setEventLabel"
+                        app:srcCompat="@drawable/button_literature" />
+
+                    <ImageButton
+                        android:id="@+id/Button_Main_Movie"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:onClick="setEventLabel"
+                        app:srcCompat="@drawable/button_movie" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/Button_Main_Volunteer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:onClick="setEventLabel"
+                        app:srcCompat="@drawable/button_volunteer" />
+
+                    <ImageButton
+                        android:id="@+id/space1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:visibility="invisible"
+                        app:srcCompat="@drawable/button_art" />
+
+
+                    <ImageButton
+                        android:id="@+id/Button_Main_Art"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:onClick="setEventLabel"
+                        app:srcCompat="@drawable/button_art" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/line8"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:color/darker_gray"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="副标签"
+                        android:textAlignment="center"
+                        android:textColor="?android:attr/statusBarColor"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <FrameLayout
+                        android:id="@+id/yellowLine2"
+                        android:layout_width="78dp"
+                        android:layout_height="5dp"
+                        android:layout_below="@id/textView2"
+                        android:layout_centerHorizontal="true"
+                        android:background="@android:color/holo_orange_light">
+
+                    </FrameLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/Button_Sub_Sci"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:onClick="setEventLabel"
+                        app:srcCompat="@drawable/button_sci" />
+
+                    <ImageButton
+                        android:id="@+id/Button_Sub_Computer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:onClick="setEventLabel"
+                        app:srcCompat="@drawable/button_computer" />
+
+                    <ImageButton
+                        android:id="@+id/Button_Sub_PE"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:onClick="setEventLabel"
+                        app:srcCompat="@drawable/button_pe" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/Button_Sub_Practice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:onClick="setEventLabel"
+                        app:srcCompat="@drawable/button_practice" />
+
+                    <ImageButton
+                        android:id="@+id/Button_Sub_English"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:onClick="setEventLabel"
+                        app:srcCompat="@drawable/button_english" />
+
+                    <ImageButton
+                        android:id="@+id/Button_Sub_Economic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:onClick="setEventLabel"
+                        app:srcCompat="@drawable/button_economic" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/Button_Sub_Chuangye"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:onClick="setEventLabel"
+                        app:srcCompat="@drawable/button_chuangye" />
+
+                    <ImageButton
+                        android:id="@+id/Button_Sub_Literature"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:onClick="setEventLabel"
+                        app:srcCompat="@drawable/button_literature" />
+
+                    <ImageButton
+                        android:id="@+id/Button_Sub_Movie"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:onClick="setEventLabel"
+                        app:srcCompat="@drawable/button_movie" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/Button_Sub_Volunteer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:onClick="setEventLabel"
+                        app:srcCompat="@drawable/button_volunteer" />
+
+                    <ImageButton
+                        android:id="@+id/space2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:visibility="invisible"
+                        app:srcCompat="@drawable/button_art" />
+
+                    <ImageButton
+                        android:id="@+id/Button_Sub_Art"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:onClick="setEventLabel"
+                        app:srcCompat="@drawable/button_art" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:color/darker_gray"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="活动形式"
+                        android:textAlignment="center"
+                        android:textColor="?android:attr/statusBarColor"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <FrameLayout
+                        android:id="@+id/yellowLine3"
+                        android:layout_width="78dp"
+                        android:layout_height="5dp"
+                        android:layout_below="@id/textView3"
+                        android:layout_centerHorizontal="true"
+                        android:background="@android:color/holo_orange_light">
+
+                    </FrameLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/Button_Activity_Lecture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:onClick="setEventLabel"
+                        app:srcCompat="@drawable/button_lecture" />
+
+                    <ImageButton
+                        android:id="@+id/Button_Activity_Xsj"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:onClick="setEventLabel"
+                        app:srcCompat="@drawable/button_xsj" />
+
+                    <ImageButton
+                        android:id="@+id/Button_Activity_Exhibition"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:onClick="setEventLabel"
+                        app:srcCompat="@drawable/button_exhibition" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/Button_Activity_Competition"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:onClick="setEventLabel"
+                        app:srcCompat="@drawable/button_competition" />
+
+                    <ImageButton
+                        android:id="@+id/space3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:visibility="invisible"
+                        app:srcCompat="@drawable/button_performance" />
+
+                    <ImageButton
+                        android:id="@+id/Button_Activity_Performance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:onClick="setEventLabel"
+                        app:srcCompat="@drawable/button_performance" />
+
+                </LinearLayout>
+
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginBottom="20dp">
+
+                    <TextView
+                        android:id="@+id/TextSetEventLabelSuccessful"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@id/saveEventLabel"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="5dp"
+                        android:background="@android:color/darker_gray"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="1dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="@string/setLabelSuccess"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+                        android:visibility="invisible" />
+
+                    <Button
+                        android:id="@+id/saveEventLabel"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/circle_button_shape"
+                        android:text="保存标签"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:onClick="saveLabel"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
