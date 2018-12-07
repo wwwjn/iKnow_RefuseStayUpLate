@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/PrivateButton"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@android:color/darker_gray"
+    android:drawableTop="@drawable/ic_home_black_24dp"
+    android:paddingLeft="15dp"
+    android:paddingTop="10dp"
+    android:paddingRight="15dp"
+    android:paddingBottom="5dp"
+    android:text="个人日历"
+    android:textColor="@android:color/black"
+    android:textSize="16sp" />
