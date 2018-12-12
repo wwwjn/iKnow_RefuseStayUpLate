@@ -2,7 +2,111 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="300dp"
     android:layout_height="600dp"
-    android:background="#b75a5a"
     android:layout_gravity="center">
 
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/DateBar"
+        android:layout_height="66dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/Date1126"
+                android:layout_width="55dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:text="一\n26"/>
+
+            <Button
+                android:id="@+id/Date1127"
+                android:layout_width="55dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:text="二\n27" />
+
+            <Button
+                android:id="@+id/Date1128"
+                android:layout_width="55dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:text="三\n28" />
+
+            <Button
+                android:id="@+id/Date1129"
+                android:layout_width="55dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:text="四\n29" />
+
+            <Button
+                android:id="@+id/Date1130"
+                android:layout_width="55dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:text="五\n30" />
+
+            <Button
+                android:id="@+id/Date1131"
+                android:layout_width="55dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:text="六\n31" />
+
+            <Button
+                android:id="@+id/Date1201"
+                android:layout_width="55dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:text="日\n1" />
+
+            <Button
+                android:id="@+id/Date1202"
+                android:layout_width="55dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:text="一\n2" />
+
+            <Button
+                android:id="@+id/Date1203"
+                android:layout_width="55dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:text="二\n3" />
+
+            <Button
+                android:id="@+id/Date1204"
+                android:layout_width="55dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:text="三\n4" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="458dp"
+        android:layout_below="@+id/DateBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+    </ScrollView>
 </RelativeLayout>
