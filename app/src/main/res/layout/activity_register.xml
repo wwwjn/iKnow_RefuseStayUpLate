@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="600dp"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/Welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="欢迎使用iKnow"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textColor="#b96f6f"
+        android:layout_below="@id/Logo"/>
+
+    <Spinner
+        android:id="@+id/Department"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@id/Welcome" />
+
+    <TextView
+        android:id="@+id/DepartmentError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="请选择院系!"
+        android:textSize="17sp"
+        android:textColor="#c71f1f"
+        android:visibility="invisible"
+        android:layout_below="@id/Department"/>
+
+    <EditText
+        android:id="@+id/Username"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:inputType="textPersonName"
+        android:background="@drawable/edit_text"
+        android:drawableLeft="@drawable/user2_mini"
+        android:drawablePadding="40dp"
+        android:textSize="20sp"
+        android:textColorHint="#c7c5c5"
+        android:hint="请输入用户名"
+        android:layout_below="@id/DepartmentError"/>
+
+    <TextView
+        android:id="@+id/UsernameError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="请输入用户名!"
+        android:textSize="17sp"
+        android:textColor="#c71f1f"
+        android:visibility="invisible"
+        android:layout_below="@id/Username"/>
+
+    <EditText
+        android:id="@+id/Nickname"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:inputType="textPersonName"
+        android:background="@drawable/edit_text"
+        android:drawableLeft="@drawable/id_mini"
+        android:drawablePadding="40dp"
+        android:textSize="20sp"
+        android:textColorHint="#c7c5c5"
+        android:hint="请输入昵称"
+        android:layout_below="@id/UsernameError"/>
+
+    <TextView
+        android:id="@+id/NicknameError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="请输入昵称!"
+        android:textSize="17sp"
+        android:textColor="#c71f1f"
+        android:visibility="invisible"
+        android:layout_below="@id/Nickname"/>
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:inputType="textPassword"
+        android:background="@drawable/edit_text"
+        android:drawableLeft="@drawable/locked_mini"
+        android:drawablePadding="40dp"
+        android:textSize="20sp"
+        android:textColorHint="#c7c5c5"
+        android:hint="请输入密码"
+        android:layout_below="@id/NicknameError"/>
+
+    <TextView
+        android:id="@+id/PasswordError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="请输入密码!"
+        android:textSize="17sp"
+        android:textColor="#c71f1f"
+        android:visibility="invisible"
+        android:layout_below="@id/Password"/>
+
+    <EditText
+        android:id="@+id/Password2"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:inputType="textPassword"
+        android:background="@drawable/edit_text"
+        android:drawableLeft="@drawable/locked_mini"
+        android:drawablePadding="40dp"
+        android:textSize="20sp"
+        android:textColorHint="#c7c5c5"
+        android:hint="请再次输入密码"
+        android:layout_below="@id/PasswordError"/>
+
+    <TextView
+        android:id="@+id/Password2Error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="请再次输入密码!"
+        android:textSize="17sp"
+        android:textColor="#c71f1f"
+        android:visibility="invisible"
+        android:layout_below="@id/Password2"/>
+
+    <Button
+        android:id="@+id/Register"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_register"
+        android:text="注册并登录"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:layout_below="@id/Password2Error"/>
+
+
+</RelativeLayout>
