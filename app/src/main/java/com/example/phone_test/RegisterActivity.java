@@ -37,7 +37,7 @@ public class RegisterActivity extends AppCompatActivity {
     private EditText Username, Nickname, Password, Password2;
     private TextView DepartmentText, UsernameText, NicknameText, PasswordText, Password2Text;
     private User Me = new User();
-    private boolean RegisterSucceedFlag;
+    private boolean RegisterSucceedFlag = true;
     private String[] UsernameNow = new String[]{"李碧璐","程超群","杨小燕","王佳妮","沈运浩","马梓源","赖赣平"};
 
     private List<String> DepartmentChoice(){
@@ -131,13 +131,12 @@ public class RegisterActivity extends AppCompatActivity {
                     connection.setDoInput(true);
                     connection.setDoOutput(true);
 
-                    OutputStream os = connection.getOutputStream();
-                    os.write(content.getBytes());
-                    os.flush();
-                    os.close();
-
                     if (connection.getResponseCode() == 200) {
                         Log.i("Connection", "Succeed");
+                        OutputStream os = connection.getOutputStream();
+                        os.write(content.getBytes());
+                        os.flush();
+                        os.close();
                         String result = StreamToString(connection.getInputStream());
                         if(result.equals("0"))
                             RegisterSucceedFlag = false;
@@ -176,7 +175,6 @@ public class RegisterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-
         Init();
     }
 }

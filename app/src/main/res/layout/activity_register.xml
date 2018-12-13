@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:text="请选择院系!"
-        android:textSize="17sp"
+        android:textSize="15sp"
         android:textColor="#c71f1f"
         android:visibility="invisible"
         android:layout_below="@id/Department"/>
@@ -59,7 +59,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:text="请输入用户名!"
-        android:textSize="17sp"
+        android:textSize="15sp"
         android:textColor="#c71f1f"
         android:visibility="invisible"
         android:layout_below="@id/Username"/>
@@ -84,7 +84,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:text="请输入昵称!"
-        android:textSize="17sp"
+        android:textSize="15sp"
         android:textColor="#c71f1f"
         android:visibility="invisible"
         android:layout_below="@id/Nickname"/>
@@ -109,7 +109,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:text="请输入密码!"
-        android:textSize="17sp"
+        android:textSize="15sp"
         android:textColor="#c71f1f"
         android:visibility="invisible"
         android:layout_below="@id/Password"/>
@@ -134,7 +134,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:text="请再次输入密码!"
-        android:textSize="17sp"
+        android:textSize="15sp"
         android:textColor="#c71f1f"
         android:visibility="invisible"
         android:layout_below="@id/Password2"/>
